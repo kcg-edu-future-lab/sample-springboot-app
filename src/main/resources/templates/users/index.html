@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+検索結果:
+<table border="1">
+<thead>
+<tr><th>id</th><th>username</th><th>displayName</th></tr>
+</thead>
+<tbody>
+<tr th:if="${users != null}" th:each="u: ${users}">
+  <td th:text="${u.id}"></td>
+  <td th:text="${u.username}"></td>
+  <td th:text="${u.displayName}"></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
